@@ -23,7 +23,6 @@ function timeDifferenceCalc(data) {
   let currentData = new Date();
   difference = data - currentData;
   if (difference < 0) {
-    // window.alert('Please choose a date in the future');
     Notify.info('Please choose a date in the future');
     startBtnEl.disabled = true;
     return;
@@ -33,7 +32,7 @@ function timeDifferenceCalc(data) {
 
 function onButtonClick() {
   renderData(convertMs(difference));
-  timerId = setInterval(() => {
+  setInterval(() => {
     difference -= 1000;
     renderData(convertMs(difference));
   }, 1000);
