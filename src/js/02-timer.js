@@ -32,9 +32,13 @@ function timeDifferenceCalc(data) {
 
 function onButtonClick() {
   renderData(convertMs(difference));
-  setInterval(() => {
+  let intervalID = setInterval(() => {
     difference -= 1000;
     renderData(convertMs(difference));
+    if (difference < 0) {
+      clearInterval(intervalID);
+      renderData(convertMs(0));
+    }
   }, 1000);
 }
 
