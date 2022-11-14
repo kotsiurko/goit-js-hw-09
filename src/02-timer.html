@@ -10,34 +10,38 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <div class="container">
+    <div class="container position-relative">
 
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <input type="text" id="datetime-picker" class="form-control" />
-        </div>
-        <div class="col-auto">
-          <button type="button" class="btn btn-success" data-start>Start</button>
-        </div>
-      </div>
+      <div class="position-absolute top-0 start-50 translate-middle-x">
 
-      <div class="timer d-flex gap-4">
-        <div class="field d-flex flex-column">
-          <span class="value fs-1 text-center" data-days>00</span>
-          <span class="label">Days</span>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <input type="text" id="datetime-picker" class="form-control" />
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-success" data-start>Start</button>
+          </div>
         </div>
-        <div class="field d-flex flex-column">
-          <span class="value fs-1 text-center" data-hours>00</span>
-          <span class="label">Hours</span>
+
+        <div class="timer d-flex gap-4">
+          <div class="field d-flex flex-column">
+            <span class="value fs-1 text-center" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field d-flex flex-column">
+            <span class="value fs-1 text-center" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field d-flex flex-column">
+            <span class="value fs-1 text-center" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field d-flex flex-column">
+            <span class="value fs-1 text-center" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
         </div>
-        <div class="field d-flex flex-column">
-          <span class="value fs-1 text-center" data-minutes>00</span>
-          <span class="label">Minutes</span>
-        </div>
-        <div class="field d-flex flex-column">
-          <span class="value fs-1 text-center" data-seconds>00</span>
-          <span class="label">Seconds</span>
-        </div>
+
       </div>
 
     </div>
