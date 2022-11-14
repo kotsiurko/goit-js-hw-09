@@ -5,25 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise generator</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <form class="form">
-      <label>
-        First delay (ms)
-        <input type="number" name="delay" required />
-      </label>
-      <label>
-        Delay step (ms)
-        <input type="number" name="step" required />
-      </label>
-      <label>
-        Amount
-        <input type="number" name="amount" required />
-      </label>
-      <button type="submit">Create promises</button>
-    </form>
+<div class="container">
+
+  <form class="form row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label">First delay (ms)</label>
+    </div>
+    <div class="col-auto">
+        <input type="number" name="delay" required class="form-control"/>
+    </div>
+
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label">Delay step (ms)</label>
+    </div>
+    <div class="col-auto">
+        <input type="number" name="step" required class="form-control"/>
+    </div>
+
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label">Amount</label>
+    </div>
+    <div class="col-auto">
+      <input type="number" name="amount" required class="form-control" />
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-success" >Create promises</button>
+    </div>
+
+  </form>
+  
+
+
+
+
+
+  <!-- <form class="form">
+    <label>
+      First delay (ms)
+      <input type="number" name="delay" required />
+    </label>
+    <label>
+      Delay step (ms)
+      <input type="number" name="step" required />
+    </label>
+    <label>
+      Amount
+      <input type="number" name="amount" required />
+    </label>
+    <button type="submit" class="btn btn-success">Create promises</button>
+  </form> -->
+  
+  </div>
 
     <script src="js/03-promises.js" type="module"></script>
   </body>
